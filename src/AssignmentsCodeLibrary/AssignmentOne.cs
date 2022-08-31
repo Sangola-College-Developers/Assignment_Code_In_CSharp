@@ -92,8 +92,139 @@ namespace AssignmentsCodeLibrary
         }
         #endregion
 
-        #region Question one => Using IF Statement
+        #region Question Two => Using IF Statement
+        /// <summary>
+        /// To check entered number is positive or negative
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns>Returns boolean -> True if number is Positive else False</returns>
+        public bool IsPositive2(int number)
+        {
+            if(number > 0)
+            {
+                return true;
+            }
+            return false;
+        }
 
+        /// <summary>
+        /// To check entered number is Even or Odd
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns>Returns boolean -> True if number is Even else False</returns>
+        public bool IsEven2(int number)
+        {
+            if(number % 2 == 0)
+            {
+                return true;
+            }
+            return false;
+
+        }
+
+        /// <summary>
+        /// To check entered year is Leap year or not..
+        /// </summary>
+        /// <param name="year"></param>
+        /// <returns>Returns boolean -> True if year is Leap else False</returns>
+        public bool IsLeap2(int year)
+        {
+            if (year % 4 == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// To Find maximum numbers between given two numbers
+        /// </summary>
+        /// <param name="number1"></param>
+        /// <param name="number2"></param>
+        /// <returns>Returns int : - Maximum number between provided two numbers..</returns>
+        public int MaxInTwoNumber2(int number1, int number2)
+        {
+            if(number1 > number2)
+            {
+                return number1;
+            }
+            return number2;
+        }
+
+        /// <summary>
+        /// To Find minimum numbers between given two numbers...
+        /// </summary>
+        /// <param name="number1"></param>
+        /// <param name="number2"></param>
+        /// <returns>Returns int : - Minimum number between provided two numbers..</returns>
+        public int MinInTwoNumber2(int number1, int number2)
+        {
+            if (number1 < number2)
+            {
+                return number1;
+            }
+            return number2;
+        }
+
+        /// <summary>
+        /// To Find Maximum number between given three numbers...
+        /// </summary>
+        /// <param name="number1"></param>
+        /// <param name="number2"></param>
+        /// <param name="number3"></param>
+        /// <returns>Returns int : - Maximum number between provided three numbers..</returns>
+        public int MaxInThreeNumber2(int number1, int number2, int number3)
+        {
+            if(number1 > number2)
+            {
+                if (number1 > number3)
+                    return number1;
+                return number3;
+            }
+            else
+            {
+                if (number2 > number3)
+                    return number2;
+                return number3;
+            }
+        }
+
+        /// <summary>
+        /// To Find Minimum number between given three numbers...
+        /// </summary>
+        /// <param name="number1"></param>
+        /// <param name="number2"></param>
+        /// <param name="number3"></param>
+        /// <returns>Returns int : - Minimum number between provided three numbers..</returns>
+        public int MinInThreeNumber2(int number1, int number2, int number3)
+        {
+            if (number1 < number2)
+            {
+                if (number1 < number3)
+                    return number1;
+                return number3;
+            }
+            else
+            {
+                if (number2 < number3)
+                    return number2;
+                return number3;
+            }
+        }
+        /// <summary>
+        /// To check entered number is positive or negative or zero
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns>Returns string -> 'Positive' if number is Positive, 'Negative' if number is Negative, 'ZERO' if number is 0</returns>
+        public string IsPositiveOrNegativeOrZero(int number)
+        {
+            if (number > 0)
+                return "Positive";
+            else if (number < 0)
+                return "Negative";
+            else
+                return "ZERO";
+        }
         #endregion
     }
 }
