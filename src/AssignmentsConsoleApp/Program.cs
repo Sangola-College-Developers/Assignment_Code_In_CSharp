@@ -43,6 +43,15 @@ namespace AssignmentsConsoleApp
             Console.WriteLine($"{zero} is  {assignmentOne.IsPositiveOrNegativeOrZero(zero)}");
             Console.WriteLine("Question one => Using IF statement Ended..");
             #endregion
+
+
+            #region Question Three..
+            float percentage = assignmentOne.CalculatePercentage(80, 80, 80, 80, 80, 78);
+            Console.WriteLine($"Percentage : {percentage}");
+            string grade = assignmentOne.CalculateGrade(percentage);
+            Console.WriteLine($"Grade : {grade}");
+
+            #endregion
             Console.ReadLine();
 
 
