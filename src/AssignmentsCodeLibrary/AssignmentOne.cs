@@ -226,5 +226,36 @@ namespace AssignmentsCodeLibrary
                 return "ZERO";
         }
         #endregion
+        public float CalculatePercentage(int sub1Marks, int sub2Marks, int sub3Marks, int sub4Marks, int sub5Marks, int sub6Marks)
+        {
+            return ((sub1Marks + sub2Marks + sub3Marks + sub4Marks + sub5Marks + sub6Marks) / 6);
+        }
+        /// <summary>
+        /// grade of student according to percentage
+        /// </summary>
+        /// <param name="percentage"></param>
+        /// <returns></returns>
+        public string CalculateGrade(float percentage)
+        {
+            if (percentage < 40)
+            {
+                return "Fail";
+            }
+            else if (percentage < 50)
+            {
+                return "Third";
+            }
+            else if (percentage < 60)
+            {
+                return "Second";
+
+            }
+            else if (percentage < 70)
+            {
+                return "First";
+            }
+            return "Distinction";
+        }
+
     }
 }
